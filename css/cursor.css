@@ -10,21 +10,20 @@
     height: 8px;
     border-radius: 50%;
     pointer-events: none;
-    z-index: 10000;
+    z-index: 999999;
     transform: translate(-50%, -50%);
-    background: var(--primary-orange);
-    transition: width 0.3s ease, height 0.3s ease, background 0.3s ease;
+    background: #C16A3C;
     box-shadow: 0 0 15px rgba(193, 106, 60, 0.3);
 }
 
 .cursor-dot.active {
     width: 20px;
     height: 20px;
-    background: var(--primary-orange);
+    background: #C16A3C;
     box-shadow: 0 0 30px rgba(193, 106, 60, 0.5);
 }
 
-/* Hide default cursor on interactive elements */
+/* Hide default cursor */
 a, button, .cursor-hover, 
 .service-card, .portfolio-card, .blog-card,
 .feature-row, .social-icon, .view-more-btn,
@@ -39,7 +38,7 @@ input, textarea, select {
     cursor: auto !important;
 }
 
-/* Responsive - hide on touch devices */
+/* Hide on mobile */
 @media (max-width: 768px) {
     .cursor-dot {
         display: none !important;
