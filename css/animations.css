@@ -1,0 +1,148 @@
+/* ============================================
+   ANIMATIONS - V INTERIOR
+   ============================================ */
+
+/* ============================================
+   MARQUEE SCROLL
+   ============================================ */
+@keyframes marqueeScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ============================================
+   HERO CHARACTER REVEAL
+   ============================================ */
+@keyframes charReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(60px) rotateX(90deg);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-5px) rotateX(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+/* ============================================
+   ABOUT WORD REVEAL
+   ============================================ */
+@keyframes aboutWordReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) rotateX(90deg);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-5px) rotateX(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+/* ============================================
+   SECTION WORD REVEAL
+   ============================================ */
+@keyframes sectionWordReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) rotateX(70deg);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-3px) rotateX(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+/* ============================================
+   PRELOADER SPIN
+   ============================================ */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ============================================
+   WORD ANIMATION BASE
+   ============================================ */
+.section-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(40px) rotateX(70deg);
+    animation: sectionWordReveal 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-word {
+        transform: translateY(30px) rotateX(70deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .section-word {
+        transform: translateY(20px) rotateX(70deg);
+    }
+}
+
+/* Special styling for CTA heading */
+#ctaHeading .section-word {
+    color: #ffffff;
+}
+
+/* ============================================
+   HERO HEADING - SPLIT TEXT ANIMATION
+   ============================================ */
+#heroHeading .word-char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(60px) rotateX(90deg);
+    animation: charReveal 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    #heroHeading .char {
+        transform: translateY(40px) rotateX(90deg);
+    }
+}
+
+@media (max-width: 480px) {
+    #heroHeading .char {
+        transform: translateY(30px) rotateX(90deg);
+    }
+}
+
+/* ============================================
+   ABOUT HEADING - WORD ANIMATION
+   ============================================ */
+#aboutHeading .about-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(50px) rotateX(90deg);
+    animation: aboutWordReveal 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    #aboutHeading .about-word {
+        transform: translateY(30px) rotateX(90deg);
+    }
+}
+
+@media (max-width: 480px) {
+    #aboutHeading .about-word {
+        transform: translateY(20px) rotateX(90deg);
+    }
+}

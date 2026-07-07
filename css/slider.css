@@ -1,0 +1,186 @@
+/* ============================================
+   SLIDER NAVIGATION - BOTTOM CENTER
+   ============================================ */
+
+.slider-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+/* Circle Arrow Buttons */
+.slider-nav .slider-prev,
+.slider-nav .slider-next {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-orange);
+    background: transparent;
+    color: var(--primary-orange);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.slider-nav .slider-prev:hover,
+.slider-nav .slider-next:hover {
+    background: var(--primary-orange);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(193, 106, 60, 0.3);
+}
+
+.slider-nav .slider-prev:active,
+.slider-nav .slider-next:active {
+    transform: scale(0.95);
+}
+
+/* Disabled state */
+.slider-nav .slider-prev.swiper-button-disabled,
+.slider-nav .slider-next.swiper-button-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Pagination Dots - Between Arrows */
+.slider-pagination {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.slider-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0 !important;
+}
+
+.slider-pagination .swiper-pagination-bullet-active {
+    background: var(--primary-orange);
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* ============================================
+   SERVICE SLIDER
+   ============================================ */
+.service-slider {
+    padding: 1rem 0.5rem 3rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.service-slider .service-card {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 380px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.service-slider .service-card:hover {
+    transform: scale(1.03);
+}
+
+.service-slider .service-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.service-slider .service-title {
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+.service-slider .service-arrow {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-orange);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.service-slider .service-card:hover .service-arrow {
+    transform: rotate(45deg);
+    background: var(--primary-orange);
+    color: white;
+}
+
+/* ============================================
+   TESTIMONIALS SLIDER
+   ============================================ */
+.testimonials-slider {
+    padding: 1rem 0.5rem 3rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonials-slider .swiper-button-next::after,
+.testimonials-slider .swiper-button-prev::after {
+    font-size: 20px !important;
+    font-weight: 700;
+}
+
+.testimonials-slider .swiper-button-next:hover,
+.testimonials-slider .swiper-button-prev:hover {
+    background: var(--primary-orange);
+    color: white !important;
+    box-shadow: 0 5px 25px rgba(193, 106, 60, 0.4);
+    transform: scale(1.05);
+}
+
+.testimonials-slider .swiper-button-next {
+    right: 0px !important;
+}
+
+.testimonials-slider .swiper-button-prev {
+    left: 0px !important;
+}
+
+.testimonials-slider .swiper-pagination {
+    position: relative !important;
+    margin-top: 25px;
+}
+
+.testimonials-slider .swiper-pagination-bullet {
+    background: var(--text-light) !important;
+    opacity: 0.4;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.testimonials-slider .swiper-pagination-bullet-active {
+    background: var(--primary-orange) !important;
+    opacity: 1 !important;
+}

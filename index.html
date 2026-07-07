@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Interior - Design Your Dream House</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48x48.png">
+<!-- Apple Touch Icon (for iOS devices) -->
+<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- GSAP & SplitText for Hero Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/splittext.js@0.4.0/SplitText.min.js"></script>
+<!-- Preload Service Images -->
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&auto=format&fit=crop&q=60" fetchpriority="high">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1667312939978-64cf31718a6e?w=600&auto=format&fit=crop&q=60" fetchpriority="high">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1606744824163-985d376605aa?w=600&auto=format&fit=crop&q=60" fetchpriority="high">
+<link rel="preload" as="image" href="https://plus.unsplash.com/premium_photo-1683134285765-87d4d565efa1?w=600&auto=format&fit=crop&q=60" fetchpriority="high">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1616137466211-f939a420be84?w=600&auto=format&fit=crop&q=60" fetchpriority="high">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&auto=format&fit=crop&q=60" fetchpriority="high">
+
+<!-- Preload Portfolio Images -->
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1633375239426-09a4e6942a0e?w=800&auto=format&fit=crop&q=60" fetchpriority="high">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&auto=format&fit=crop&q=60" fetchpriority="high">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=800&auto=format&fit=crop&q=60" fetchpriority="high">
+    <!-- V Interior CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <nav>
+        <div class="logo">
+    <img src="images/logo.png" alt="V Interior Logo">
+</div>
+        <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+        <a href="#contact" class="contact-btn">
+    Get Quote
+    <i class="fas fa-arrow-right"></i>
+    <span></span>
+</a>
+    </li>
+</ul>
+        <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+    <!-- Mobile Sidebar -->
+    <div class="overlay"></div>
+    <div class="mobile-sidebar">
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+            <a href="#contact" class="contact-btn">
+    Get Quote
+    <i class="fas fa-arrow-right"></i>
+    <span></span>
+</a>
+        </li>
+    </ul>
+</div>
+
+    <!-- Image Modal/Lightbox -->
+    <div class="image-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <img src="" alt="Portfolio Image">
+            <div class="modal-info">
+                <h3 class="modal-title">Project Title</h3>
+                <p class="modal-description">Project description goes here</p>
+            </div>
+        </div>
+    </div>
+
+   <!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <!-- Subtitle - Animation 1: fadeInUp (WOW.js) -->
+        <div class="section-tag wow fadeInUp" style="margin-bottom:0.5rem;">Welcome to V Interior</div>
+        
+        <!-- Main Heading - Animation 2: SplitText Character Reveal -->
+        <h1 id="heroHeading">Crafting Spaces That Tell Your Story</h1>
+        
+        <!-- Description - Animation 3: fadeInUp with delay (WOW.js) -->
+        <p class="wow fadeInUp" data-wow-delay="0.2s">V Interior transforms ordinary spaces into extraordinary living experiences. Our design philosophy combines innovation with functionality to create environments that reflect your personality and lifestyle.</p>
+        
+        <!-- Buttons - Animation 4: fadeInUp with delay (WOW.js) -->
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+            <button class="cta-btn">Begin Your Design Journey →</button>
+        </div>
+        
+        <div class="stats-box wow fadeInUp" data-wow-delay="0.6s">
+            <div class="stat-item">
+                <div class="stat-number">300+</div>
+                <div class="stat-label">Successful Projects</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Client Satisfaction</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-image">
+        <!-- Image loaded via CSS background -->
+    </div>
+</section>
+<!-- Marquee Section -->
+<section class="marquee-section">
+    <div class="marquee-track">
+        <!-- First Set -->
+        <div class="marquee-item">
+            <span>Design Your Dream Space</span>
+            <span class="dot"></span>
+            <span>Interior Design</span>
+            <span class="dot"></span>
+            <span>Home Renovation</span>
+            <span class="dot"></span>
+            <span>Smart Furniture</span>
+            <span class="dot"></span>
+            <span>Sustainable Design</span>
+            <span class="dot"></span>
+            <span>Lighting Solutions</span>
+            <span class="dot"></span>
+            <span class="highlight">V Interior</span>
+        </div>
+        <!-- Second Set (for seamless loop) -->
+        <div class="marquee-item">
+            <span>Design Your Dream Space</span>
+            <span class="dot"></span>
+            <span>Interior Design</span>
+            <span class="dot"></span>
+            <span>Home Renovation</span>
+            <span class="dot"></span>
+            <span>Smart Furniture</span>
+            <span class="dot"></span>
+            <span>Sustainable Design</span>
+            <span class="dot"></span>
+            <span>Lighting Solutions</span>
+            <span class="dot"></span>
+            <span class="highlight">V Interior</span>
+        </div>
+    </div>
+</section>
+<!-- About Us Section -->
+<section class="about-section" id="about">
+    <div class="about-container">
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="images/about.jpg" alt="About V Interior">
+            </div>
+            <div class="about-content">
+                <div class="section-tag">About Us</div>
+                <h2 class="section-title" id="aboutHeading">We Create Spaces That Inspire & Comfort</h2>
+                <p>At V Interior, we believe every space has a story to tell. With over 15 years of experience in interior design, we transform ordinary rooms into extraordinary living experiences that reflect your unique personality and lifestyle.</p>
+                <p>Our team of passionate designers combines creativity with functionality, ensuring every project is not just beautiful but also practical for your daily life.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>15+ Years Experience</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>300+ Successful Projects</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>98% Client Satisfaction</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Award-Winning Designs</span>
+                    </div>
+                </div>
+                <a href="#contact" class="about-btn">
+    Learn More About Us <i class="fas fa-arrow-right"></i>
+</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Service Section with Slider -->
+<section class="service-section" id="services">
+    <div class="section-header">
+        <div>
+            <div class="section-tag">Our Expertise</div>
+            <h2 class="section-title" id="servicesHeading">Transforming Spaces with Innovative Design Solutions</h2>
+        </div>
+        <button class="view-more-btn">
+    Explore All Services <i class="fas fa-arrow-right"></i>
+</button>
+    </div>
+
+    <!-- Swiper Slider -->
+    <div class="swiper service-slider">
+        <div class="swiper-wrapper">
+            
+            <!-- Service Card 1 -->
+            <div class="swiper-slide">
+                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=400&auto=format&fit=crop&q=60');">
+                    <div class="service-overlay">
+                        <h3 class="service-title">Complete Home Makeovers</h3>
+                    </div>
+                    <div class="service-arrow">↗</div>
+                </div>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="swiper-slide">
+                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1667312939978-64cf31718a6e?w=400&auto=format&fit=crop&q=60');">
+                    <div class="service-overlay">
+                        <h3 class="service-title">Color & Material Consultation</h3>
+                    </div>
+                    <div class="service-arrow">↗</div>
+                </div>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="swiper-slide">
+                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1606744824163-985d376605aa?w=400&auto=format&fit=crop&q=60');">
+                    <div class="service-overlay">
+                        <h3 class="service-title">Smart Furniture Solutions</h3>
+                    </div>
+                    <div class="service-arrow">↗</div>
+                </div>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="swiper-slide">
+                <div class="service-card" style="background-image: url('https://plus.unsplash.com/premium_photo-1683134285765-87d4d565efa1?w=400&auto=format&fit=crop&q=60');">
+                    <div class="service-overlay">
+                        <h3 class="service-title">Sustainable Interior Design</h3>
+                    </div>
+                    <div class="service-arrow">↗</div>
+                </div>
+            </div>
+
+            <!-- NEW Service Card 5 -->
+            <div class="swiper-slide">
+                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1616137466211-f939a420be84?w=400&auto=format&fit=crop&q=60');">
+                    <div class="service-overlay">
+                        <h3 class="service-title">Lighting Design Solutions</h3>
+                    </div>
+                    <div class="service-arrow">↗</div>
+                </div>
+            </div>
+
+            <!-- NEW Service Card 6 -->
+            <div class="swiper-slide">
+                <div class="service-card" style="background-image: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&auto=format&fit=crop&q=60');">
+                    <div class="service-overlay">
+                        <h3 class="service-title">Outdoor & Garden Design</h3>
+                    </div>
+                    <div class="service-arrow">↗</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Custom Navigation - Bottom Center -->
+<div class="slider-nav">
+    <button class="slider-prev">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+    <div class="slider-pagination"></div>
+    <button class="slider-next">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+</div>
+</section>
+
+  <!-- Portfolio Section -->
+<section class="portfolio-section" id="portfolio">
+    <div class="portfolio-header">
+        <div class="section-tag">Featured Work</div>
+        <h2 class="section-title" id="portfolioHeading">Exceptional Designs That Inspire</h2>
+    </div>
+
+    <div class="portfolio-grid">
+        <!-- Portfolio Card 1 -->
+        <div class="portfolio-card" 
+             data-image="images/portfolio-1.jpeg" 
+             data-title="Urban Terrace Oasis" 
+             data-description="A sophisticated rooftop transformation blending indoor comfort with outdoor living">
+            <!-- Image loaded via CSS background -->
+        </div>
+
+        <!-- Portfolio Card 2 -->
+        <div class="portfolio-card" 
+             data-image="images/portfolio-2.jpeg" 
+             data-title="Minimalist Kitchen Design" 
+             data-description="Smart storage solutions meet elegant design in this functional kitchen remodel">
+            <!-- Image loaded via CSS background -->
+        </div>
+
+        <!-- Portfolio Card 3 -->
+        <div class="portfolio-card" 
+             data-image="images/portfolio-3.jpeg" 
+             data-title="Modern Living Space" 
+             data-description="An open-concept living area featuring custom built-ins and ambient lighting">
+            <!-- Image loaded via CSS background -->
+        </div>
+    </div>
+
+    <button class="view-more-btn">View Our Portfolio</button>
+</section>
+<!-- ══════════════════════════════
+     WHY CHOOSE US SECTION
+══════════════════════════════ -->
+<section class="why-section">
+    <div class="why-inner why-large">
+
+        <div class="section-eyebrow" style="margin-bottom:16px">
+            <span class="eyebrow-pill">
+                <i class="fas fa-asterisk"></i> Why Choose Us
+            </span>
+        </div>
+
+        <h2 class="section-heading" id="whyHeading" style="margin-bottom:36px">
+    Don't Just Install Design—We Build<br>Design Partnerships
+</h2>
+
+        <div class="why-two-col why-large-grid">
+
+            <!-- LEFT COLUMN - First 3 Options -->
+            <div class="why-left-col">
+                <div class="feature-row feature-large">
+                    <div class="feat-icon-wrap orange"><i class="fas fa-pencil-ruler"></i></div>
+                    <span class="feat-label">Expert Consultation</span>
+                </div>
+                <div class="feature-row feature-large">
+                    <div class="feat-icon-wrap orange"><i class="fas fa-lightbulb"></i></div>
+                    <span class="feat-label">Creative Solutions</span>
+                </div>
+                <div class="feature-row feature-large">
+                    <div class="feat-icon-wrap teal"><i class="fas fa-shield-alt"></i></div>
+                    <span class="feat-label">Quality Guaranteed</span>
+                </div>
+            </div>
+
+            <!-- CENTER COLUMN - Image -->
+            <div class="why-center-col why-image-large">
+                <div class="ship-frame ship-frame-large">
+                    <div class="ship-shape ship-shape-large">
+                        <img src="images/why-choose.jpg" alt="Interior Design">
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN - Last 3 Options -->
+            <div class="why-right-col">
+                <div class="feature-row feature-large">
+                    <div class="feat-icon-wrap orange"><i class="fas fa-dollar-sign"></i></div>
+                    <span class="feat-label">Affordable Pricing</span>
+                </div>
+                <div class="feature-row feature-large">
+                    <div class="feat-icon-wrap orange"><i class="fas fa-home"></i></div>
+                    <span class="feat-label">Premium Materials</span>
+                </div>
+                <div class="feature-row feature-large">
+                    <div class="feat-icon-wrap teal"><i class="fas fa-headset"></i></div>
+                    <span class="feat-label">24/7 Client Support</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+   <!-- Testimonials Section -->
+<section class="testimonials-section" id="testimonials">
+    <div class="testimonials-container">
+        <div class="section-header" style="display:block; text-align:center; margin-bottom:3rem;">
+            <div class="section-tag" style="display:inline-block;">Client Stories</div>
+            <h2 class="section-title" id="testimonialsHeading" style="max-width:700px; margin:0.5rem auto;">What Our Clients Say</h2>
+        </div>
+
+        <!-- Swiper Slider -->
+        <div class="swiper testimonials-slider">
+            <div class="swiper-wrapper">
+
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"V Interior completely transformed our home. Their attention to detail and creative solutions exceeded all our expectations. Professional from start to finish."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/testinomial-1.jpg" alt="Alexandra Chen">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Alexandra Chen</h4>
+                                <p class="author-title">Homeowner, San Francisco</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Working with V Interior was a game-changer for our corporate offices. They created a space that boosts productivity while maintaining aesthetic appeal."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/testinomial-2.jpg" alt="Marcus Johnson">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Marcus Johnson</h4>
+                                <p class="author-title">CEO, TechVision Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"The team listened to our vision and delivered beyond what we imagined. Every corner of our home now tells a story of thoughtful design."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/testinomial-3.jpg" alt="Sophia Williams">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Sophia Williams</h4>
+                                <p class="author-title">Interior Design Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"From concept to completion, V Interior demonstrated exceptional professionalism. Our restaurant's new interior has increased customer satisfaction by 40%."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/testinomial-4.jpg" alt="David Rodriguez">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">David Rodriguez</h4>
+                                <p class="author-title">Restaurant Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"V Interior brought our dream home to life. Their innovative approach and attention to every detail made the entire process seamless and enjoyable."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/testinomial-5.jpg" alt="Emily Davis">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Emily Davis</h4>
+                                <p class="author-title">Homeowner, Los Angeles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"The team at V Interior is incredibly talented. They transformed our outdated office into a modern, inspiring workspace that our employees love."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/testinomial-6.jpg" alt="Michael Chen">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Michael Chen</h4>
+                                <p class="author-title">Operations Director</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+           <!-- Custom Navigation - Bottom Center -->
+<div class="slider-nav">
+    <button class="slider-prev testimonial-prev">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+    <div class="slider-pagination testimonial-pagination"></div>
+    <button class="slider-next testimonial-next">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════
+     BLOG SECTION - V INTERIOR
+══════════════════════════════ -->
+<section class="blog-section" id="blog">
+    <div class="blog-container">
+
+        <!-- Eyebrow -->
+        <div class="section-eyebrow">
+            <span class="eyebrow-pill">
+                <i class="fas fa-asterisk"></i> Latest Blog
+            </span>
+        </div>
+
+        <!-- Heading with Animation -->
+        <h2 class="section-heading" id="blogHeading">Read our latest insights from<br>Update blog posts</h2>
+
+        <!-- Blog Grid -->
+        <div class="blog-grid">
+
+            <!-- Post 1 -->
+            <article class="blog-card">
+                <div class="blog-img-wrap">
+                    <!-- SHAPE ONLY AROUND IMAGE -->
+                    <div class="blog-image-shape">
+                        <img src="images/blog-1.jpg" alt="Interior Design">
+                    </div>
+                </div>
+                <div class="blog-meta">
+                    <span class="blog-tag">Design</span>
+                    <span class="blog-date">03 June, 2026</span>
+                </div>
+                <h3 class="blog-title">The Complete Guide to Fixed and Flexible Interior Design Solutions</h3>
+                <a class="blog-read-more" href="#" data-cursor-text="Read">Read More <i class="fas fa-arrow-right"></i></a>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="blog-card">
+                <div class="blog-img-wrap">
+                    <div class="blog-image-shape">
+                        <img src="images/blog-2.jpeg" alt="Home Interior">
+                    </div>
+                </div>
+                <div class="blog-meta">
+                    <span class="blog-tag" style="background:var(--dark-bg)">Home</span>
+                    <span class="blog-date">04 June, 2026</span>
+                </div>
+                <h3 class="blog-title">Is now the right time to invest in an interior design solution?</h3>
+                <a class="blog-read-more" href="#" data-cursor-text="Read">Read More <i class="fas fa-arrow-right"></i></a>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="blog-card">
+                <div class="blog-img-wrap">
+                    <div class="blog-image-shape">
+                        <img src="images/blog-3.jpg" alt="Living Room Design">
+                    </div>
+                </div>
+                <div class="blog-meta">
+                    <span class="blog-tag">Inspiration</span>
+                    <span class="blog-date">05 June, 2026</span>
+                </div>
+                <h3 class="blog-title">V Interior secure new landmark design contracts</h3>
+                <a class="blog-read-more" href="#" data-cursor-text="Read">Read More <i class="fas fa-arrow-right"></i></a>
+            </article>
+
+            <!-- Post 4 -->
+            <article class="blog-card">
+                <div class="blog-img-wrap">
+                    <div class="blog-image-shape">
+                        <img src="images/blog-4.jpg" alt="Bedroom Design">
+                    </div>
+                </div>
+                <div class="blog-meta">
+                    <span class="blog-tag" style="background:var(--dark-bg)">Home2</span>
+                    <span class="blog-date">06 June, 2026</span>
+                </div>
+                <h3 class="blog-title">A Complete Guide to Fixed and Flexible Interior Design</h3>
+                <a class="blog-read-more" href="#" data-cursor-text="Read">Read More <i class="fas fa-arrow-right"></i></a>
+            </article>
+
+        </div>
+
+        <!-- View All Button -->
+        <div class="blog-view-all">
+            <button class="view-more-btn">View All Posts <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+</section>  
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-header">
+            <div class="section-tag">Get In Touch</div>
+            <h2 class="section-title" id="contactHeading">Let's Create Something Beautiful Together</h2>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Start Your Design Journey</h3>
+                <p>Ready to transform your space? Contact us today for a complimentary consultation. Our team is excited to bring your vision to life with our signature blend of creativity and expertise.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h4>Visit Our Studio</h4>
+                            <p>123 Design District<br>San Francisco, CA 94107</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-text">
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567<br>Mon-Fri, 9am-6pm PST</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h4>Email Us</h4>
+                            <p>hello@vinterior.com<br>Response within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h4>Follow Our Journey</h4>
+                <div class="social-icons">
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+</div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="project">Project Type</label>
+                    <input type="text" id="project" placeholder="Residential, Commercial, etc.">
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell Us About Your Project</label>
+                    <textarea id="message" placeholder="Describe your vision, timeline, and budget..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Schedule Consultation →</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+           <h2 id="ctaHeading">Ready to Redefine Your Space?</h2>
+            <p>Join hundreds of satisfied clients who have transformed their spaces with V Interior. Your dream design is just one conversation away.</p>
+            <button class="lets-chat-btn">Start Your Project Today →</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Design Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#residential">Residential Design</a></li>
+                    <li><a href="#commercial">Commercial Spaces</a></li>
+                    <li><a href="#renovation">Home Renovation</a></li>
+                    <li><a href="#consultation">Design Consultation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#process">Design Process</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#press">Press & Media</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="#blog">Design Blog</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#portfolio">Project Gallery</a></li>
+                    <li><a href="#contact">Client Portal</a></li>
+                </ul>
+                <div class="social-icons">
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+</div>
+            </div>
+            
+            <div class="footer-section"><div class="footer-logo">
+    <img src="images/logo-white.png" alt="V Interior Logo">
+</div>
+                <p class="footer-desc">Creating spaces that inspire, comfort, and reflect your unique story. Premium interior design services for residential and commercial clients.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email address">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 V Interior Design Studio. All rights reserved. | <a href="#privacy" style="color: #AAA; text-decoration: none;">Privacy Policy</a> | <a href="#terms" style="color: #AAA; text-decoration: none;">Terms of Service</a></p>
+        </div>
+    </footer>
+    <!-- Preloader -->
+<div class="preloader" id="preloader">
+    <div class="loading-container">
+        <div class="loading-ring"></div><div class="loading-icon">
+    <img src="images/logo-preloader.png" alt="V Interior">
+</div>
+</div>
+<!-- Scroll to Top Button -->
+<button class="scroll-top" id="scrollTop">
+    <svg viewBox="0 0 55 55">
+        <circle class="circle-bg" cx="27.5" cy="27.5" r="25"/>
+        <circle class="circle-fill" id="scrollCircle" cx="27.5" cy="27.5" r="25"/>
+    </svg>
+    <i class="fas fa-arrow-up arrow-icon"></i>
+    <span class="liquid-bg"></span>
+</button>
+<!-- Custom Cursor - Dot -->
+<div class="cursor-dot" id="cursorDot"></div>
+  <!-- V Interior JavaScript Files -->
+<script src="js/preloader.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/mobile-menu.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/scroll-effects.js"></script>
+<script src="js/sliders.js"></script>
+<script src="js/gsap-animations.js"></script>
+<script src="js/text-animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
